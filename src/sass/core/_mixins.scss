@@ -1,0 +1,162 @@
+// =============================================================================
+// Media Queries
+// =============================================================================
+
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-mid":   992px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-small":1200px,
+  "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min)
+{
+  @if map_has_key($breakpoints, $width) {
+   $width: map_get($breakpoints, $width);
+   @if $type == max {
+    $width: $width - 1px;
+   }
+   @media only screen and (#{$type}-width: $width) {
+    @content;
+   }
+  }
+}
+
+// =============================================================================
+// Скругление на каждый угол
+// =============================================================================
+
+// пример: @include br-c(10px,0,10px,0);
+@mixin borderRadius($p1, $p2, $p3, $p4)
+{
+  -webkit-border-radius: $p1 $p2 $p3 $p4;
+  -moz-border-radius: $p1 $p2 $p3 $p4;
+  -ms-border-radius: $p1 $p2 $p3 $p4;
+  border-radius: $p1 $p2 $p3 $p4;
+}
+
+// =============================================================================
+// Text clamp
+// =============================================================================
+
+@mixin textClamp($clamp, $height:auto)
+{
+  -webkit-line-clamp: $clamp;
+  height: $height;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// =============================================================================
+// Reponsive imgage
+// =============================================================================
+
+@mixin resImg($fit: cover, $height: auto)
+{
+  object-fit: $fit;
+  width: 100%;
+  max-width: 100%;
+  height: $height;
+}
+
+// =============================================================================
+// Centring XY
+// =============================================================================
+
+@mixin сentreXY()
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// =============================================================================
+// Centring X
+// =============================================================================
+
+@mixin сentreX()
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// =============================================================================
+// Centring Y
+// =============================================================================
+
+@mixin сentreY()
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// =============================================================================
+// Clearfix
+// =============================================================================
+
+@mixin clearfix
+{
+  &:before,
+  &:after
+  {
+    display: table;
+    content: " ";
+  }
+
+  &:after
+  {
+    clear: both;
+  }
+}
+
+// =============================================================================
+// Placeholder
+// =============================================================================
+
+@mixin placeholder($color, $size, $weight)
+{
+  &::-webkit-input-placeholder
+  {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+  } &:-moz-placeholder
+  {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+  }
+  &::-moz-placeholder
+  {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+  }
+  &:-ms-input-placeholder
+  {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+  }
+}
+
+
+// Image animation
+@mixin imgAnim
+{
+  transition: transform .8s ease;
+
+  &:hover
+  {
+      transform: scale(1.15) rotate(-5deg);
+  }
+}

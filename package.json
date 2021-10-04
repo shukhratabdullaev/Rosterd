@@ -1,0 +1,65 @@
+{
+	"name": "gulp-tc",
+	"version": "1.0.0",
+	"description": "gulp template",
+	"author": "Rasulbek Irgashev",
+	"license": "ISC",
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build --production true"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/irgawev/gulp-tc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/irgawev/gulp-tc/issues"
+	},
+	"homepage": "https://github.com/irgawev/gulp-tc#readme",
+	"devDependencies": {
+		"autoprefixer": "^9.5.0",
+		"browser-sync": "^2.26.3",
+		"cssnano": "^4.1.10",
+		"del": "^4.0.0",
+		"gulp": "^4.0.0",
+		"gulp-changed": "^3.2.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-cli": "^2.0.1",
+		"gulp-concat": "^2.6.1",
+		"gulp-hash-src": "^0.1.6",
+		"gulp-jsbeautifier": "^3.0.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-posthtml": "^3.0.5",
+		"gulp-prettier": "^2.1.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-watch": "^5.0.1",
+		"posthtml-include": "^1.4.3",
+		"prettier": "^1.19.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"prettier --write",
+			"git add"
+		],
+		"*.css": [
+			"prettier --write",
+			"git add"
+		],
+		"*.scss": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"gulp-uglify-es": "^2.0.0",
+		"posthtml-remove-attributes": "^1.0.0",
+		"posthtml-richtypo": "^1.0.2",
+		"richtypo-rules-ru": "^4.0.2"
+	}
+}

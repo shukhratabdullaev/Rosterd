@@ -1,0 +1,49 @@
+// .ham {
+//     position: relative;
+//     cursor: pointer;
+//     -webkit-tap-highlight-color: transparent;
+//     transition: transform 400ms;
+//     -moz-user-select: none;
+//     -webkit-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     display: none;
+//     z-index: 10;
+    
+//     & .top {
+//       stroke-dasharray: 40 121;
+//     }
+//     & .bottom {
+//       stroke-dasharray: 40 121;
+//     }
+//     &.active .top {
+//       stroke-dashoffset: -68px;
+//     }
+//     &.active .bottom {
+//       stroke-dashoffset: -68px;
+//     }
+
+//     &.active
+//     {
+//       right: 0;
+//     }
+
+//     @include mq('tablet-mid', max)
+//     {
+//         display: block;
+//     }
+//   }
+
+//   .hamRotate.active {
+//     transform: rotate(45deg);
+//   }
+//   .hamRotate180.active {
+//     transform: rotate(180deg);
+//   }
+//   .line {
+//     fill:none;
+//     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+//     stroke:#fff;
+//     stroke-width: 2;
+//     stroke-linecap:round;
+//   }
