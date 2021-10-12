@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 3em;
+    color: #ffffff;
+    background-color: #0d2273;
+    &__wrapper {
+        border-bottom: .5px solid rgba(255, 255, 255, 0.5);
+    }
+    .nav-list {
+        &__title {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 1.5em;
+        }
+        &__item {
+            margin-bottom: 1em;
+            &:last-child {
+                margin-bottom: 2em;
+            }
+        }
+        &__link {
+        }
+    }
+&__copyright {
+    padding-top: 1.5em;
+    padding-bottom: 6em;
+}
+}

@@ -1,35 +1,291 @@
 // === COMMON ===
-.wrapper-outer {}
-.wrapper-inner {
-    max-width: 1440px;
-    margin: 0 auto;
+p,
+h4 {
+    margin: 0;
 }
-// === / COMMON ===
+.title {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 600;
+}
 
+.title-secondary {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+// === / COMMON ===
 
 // === SECTION-HEADER ===
 .section-header {
-    margin-top: 8em;
+    margin-top: 12em;
+    padding-bottom: 6em;
+    &__wrapper {
+        position: relative;
+        background-color: #e8effd;
+        border-radius: 16px;
+    }
+    .info {
+        padding: 3rem 0 2rem 3rem;
+        &__title {
+            font-size: 4.2em;
+            font-weight: 800;
+        }
+        &__text {
+            font-size: 1em;
+            padding: 1.5em 6em 1em 0;
+            margin-bottom: 5em;
+        }
+        span {
+            font-weight: 700;
+            color: #2edbad;
+        }
+        .links {
+            margin-bottom: 3em;
+            &__app-store {
+                padding: 1em 0.5em 1em 0;
+            }
+            &__google-play {
+                padding: 1em 0 1em 0.5em;
+            }
+        }
+    }
+    .banner {
+        &__img {
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            right: -5em;
+        }
+    }
 }
 // ===  / SECTION-HEADER ===
 
 // === MANAGE ===
-.section-manage {}
+.section-manage {
+    background-color: #f8f8f8;
+    padding: 4em 0 6em 0;
+    &__title {
+        margin-bottom: 2em;
+    }
+    .card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 1.5em 2em 2em 2em;
+        border: 1px solid #e9e9e9;
+        box-shadow: 0px 4px 5px 0px rgba(221, 227, 252, 1);
+        &__img {
+            object-fit: cover;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 1.5em;
+        }
+        &__subtitle {
+            margin-bottom: 1em;
+        }
+        &__text {
+            @include textClamp(4, 100px);
+        }
+    }
+}
 // ===  / MANAGE ===
 
-// === ABOUT-APP ===
-.section-about-app {}
-// ===  / ABOUT-APP ===
+// === ABOUT ===
+.section-about {
+    padding: 6em 0 7em 0;
+    &__title {
+        margin-bottom: 2em;
+    }
+}
+// ===  / ABOUT ===
 
-// === GET-STARTED ===
-.section-get-started {}
-// ===  / GET-STARTED ===
+// === START ===
+.section-start {
+    background-color: #e8effd;
+    padding: 4em 0 4.5em 0;
+    &__info-title {
+        font-size: 1.25em;
+        margin-bottom: 1em;
+    }
+    &__title {
+        margin-bottom: 3em;
+    }
+    &__wrapper {
+        text-align: center;
+        position: relative;
+        .before:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 22%;
+            right: 50%;
+            width: 80%;
+            border-top: 2px dashed #0d2273;
+        }
+        .start-card {
+            &__img {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 2em;
+                z-index: 5;
+            }
+            &__subtitle {
+                margin-bottom: 1em;
+            }
+            &__text {
+                padding: 0 0.5em;
+            }
+        }
+    }
+}
+// ===  / START ===
 
 // === APP-WORKS ===
-.section-app-works {}
+.app-works {
+    position: relative;
+    padding: 6rem 0 30rem 0;
+    &__title {
+        margin-bottom: 6rem;
+    }
+    &__pos-a {
+        position: absolute;
+        right: 0;
+    }
+    .staff,
+    .dashboard {
+        &__title {
+            margin-bottom: 2em;
+            font-size: 1.25em;
+        }
+        .list {
+            &__item {
+                position: relative;
+                margin-bottom: 2em;
+                font-size: 1em;
+                font-weight: 400;
+                padding-left: 4rem;
+                &::before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    top: -8px;
+                    left: 0;
+                    border-radius: 30px;
+                    background-image: url(/img/staff__checked.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-align: center;
+                    background-color: #e8effd;
+                }
+            }
+        }
+    }
+    .dashboard-img {
+        position: absolute;
+        right: 0;
+        // &::after {
+        //     content: "";
+        //     width: 732px;
+        //     height: 732px;
+        //     display: block;
+        //     position: absolute;
+        //     bottom: 50%;
+        //     transform: translate(50%, 50%);
+        //     right: 30%;
+        //     border-radius: 100%;
+        //     background-color: #e8effd;
+        //     z-index: 1;
+        // }
+        &__img {
+            height: 473px;
+            width: 722px;
+
+            position: relative;
+            z-index: 3;
+        }
+    }
+}
 // ===  / APP-WORKS ===
 
-// === CONTACT-US ===
-.section-contact-us {}
-// ===  / CONTACT-US ===
-
+// === CONTACT ===
+.contact {
+    position: relative;
+    padding: 6em 0;
+    background-color: #e8effd;
+    .information {
+        padding-left: 7em;
+        &__title {
+            font-size: 2.5em;
+            margin-bottom: 1.75em;
+        }
+        .details {
+            margin-left: 2em;
+            &__title {
+                font-size: 1em;
+                color: #52575c;
+                margin-bottom: 0.5em;
+            }
+            &__link {
+                font-size: 1.5em;
+                font-weight: 600;
+                color: #52575c;
+            }
+        }
+    }
+    &__pos-a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .form-group {
+        width: 515px;
+        position: relative;
+        z-index: 3;
+        padding: 3em;
+        border: 1px solid #e9e9e9;
+        border-radius: 16px;
+        background-color: #ffffff;
+        align-items: flex-start;
+        &__title {
+            margin-bottom: 1em;
+        }
+        &__label {
+            font-size: 1em;
+            font-weight: 600;
+            color: #272727;
+        }
+        &__input {
+            background-color: #f3f7fe;
+            padding: 1em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+            &::placeholder {
+                font-size: 1em;
+                font-weight: 400;
+            }
+        }
+        textarea {
+            margin-bottom: 2.5em;
+        }
+        &__button {
+            color: #ffffff;
+            align-self: flex-start;
+            background-color: #0d2273;
+            padding: 0.5em 1.5em;
+            border-radius: 8px;
+        }
+    }
+}
+// ===  / CONTACT ===

@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<!-- Head -->
-		<include src="src/templates/head.html" locals='{"title": "Главная страница"}'></include>
-	</head>
-	<body>
+<html lang="en">
+
+<head>
+	<!-- Head -->
+	<include src="src/templates/head.html" locals='{"title": "Главная страница"}'></include>
+</head>
+
+<body>
+	<include src="src/templates/header.html"></include>
+	<!-- page-about-us -->
+	<section class="page-about-us">
+		<div class="container">
+			<div class="page-about-us__wrapper">
+				<div class="page-about-us__about about">
+					<h2 class="about__title title-secondary">We are Rosterd</h2>
+					<p class="about__text text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et diam aenean ut vitae
+						porttitor diam. Augue est arcu nisi,
+						justo ut sapien venenatis aliquet. Id consequat nec faucibus malesuada tortor. Ac aliquam in id
+						dolor, a non eu porta.
+						Mauris, varius viverra scelerisque faucibus suspendisse pellentesque. Elit non lectus bibendum
+						at
+						nunc. Imperdiet
+						interdum diam nam in integer interdum sed nulla arcu. Nisi interdum volutpat et nec. Scelerisque
+						morbi vitae id
+						vulputate vitae justo.
+					</p>
+					<img class="about__img" src="img/about-banner.png" alt="about-banner">
+				</div>
+				<div class="page-about-us__gallery gallery">
+					<h2 class="gallery__title title-secondary text-center">Meet our team</h2>
+					<div class="row">
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+						<div class="gallery__employee employee col-lg-4">
+							<img class="employee__img" src="../img/page-about__team-img.png" alt="employee">
+							<p class="employee__name">John Doe</p>
+							<p class="employee__position">senior front-end developer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / page-about-us -->
 
 
 
@@ -51,8 +115,8 @@
 
 
 
-		<!-- Footer, scripts and modals -->
-		<include src="src/templates/modals.html"></include>
-		<include src="src/templates/footer.html"></include>
-	</body>
+
+
+</body>
+
 </html>
