@@ -1,21 +1,12 @@
 {
-	"name": "gulp-tc",
+	"name": "Rosterd-website",
 	"version": "1.0.0",
-	"description": "gulp template",
-	"author": "Rasulbek Irgashev",
-	"license": "ISC",
+	"description": "Scheduling shift work on-demand hassle free. Powerful AI to match the right staff for the job. Cover shifts with in a matter of minutes. Easy to use on any device.",
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build --production true"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/irgawev/gulp-tc.git"
-	},
-	"bugs": {
-		"url": "https://github.com/irgawev/gulp-tc/issues"
-	},
-	"homepage": "https://github.com/irgawev/gulp-tc#readme",
+	
 	"devDependencies": {
 		"autoprefixer": "^9.5.0",
 		"browser-sync": "^2.26.3",
