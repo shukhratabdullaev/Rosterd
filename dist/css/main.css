@@ -387,7 +387,7 @@ h4 {
     background-color: #e8effd;
     border-radius: 16px; }
   .section-header .info {
-    padding: 3rem 0 2rem 3rem; }
+    padding: 3rem 0 3rem 3rem; }
     .section-header .info__title {
       font-size: 4.2em;
       font-weight: 800; }
@@ -444,7 +444,7 @@ h4 {
 
 .section-start {
   background-color: #e8effd;
-  padding: 4em 0 4.5em 0; }
+  padding: 6em 0 4.5em 0; }
   .section-start__info-title {
     font-size: 1.25em;
     margin-bottom: 1em; }
