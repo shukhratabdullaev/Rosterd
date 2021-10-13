@@ -6,7 +6,6 @@
 		"start": "gulp",
 		"build": "gulp build --production true"
 	},
-	
 	"devDependencies": {
 		"autoprefixer": "^9.5.0",
 		"browser-sync": "^2.26.3",
