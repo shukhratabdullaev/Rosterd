@@ -24,3 +24,14 @@
         }
     }
 }
+
+.modal-card {
+     &__button {
+        padding: 0.5em 1em;
+        font-size: 1em;
+        color: #fff;
+        background-color: #0D2273;
+        border-radius: 8px;
+        transition: 0.2s linear;
+    }
+}
