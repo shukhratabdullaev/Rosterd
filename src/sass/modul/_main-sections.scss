@@ -275,6 +275,9 @@ h4 {
                 font-size: 1em;
                 font-weight: 400;
             }
+            &:focus {
+                background-color: #fff;
+            }
         }
         textarea {
             margin-bottom: 2.5em;

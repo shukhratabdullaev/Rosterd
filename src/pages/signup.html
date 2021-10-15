@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <include src="src\templates\head.html"></include>
+</head>
+
+<body>
+    <include src="src\templates\header.html"></include>
+
+    <div class="signup">
+        <div class="container">
+            <h2 class="signup__title title">Contact our team and learn how Rosterd can bring value to your business</h2>
+            <form action="" class="signup-form-group form-group">
+                <div class="form-group__item d-flex mb-2">
+                    <div class="form-group__card w-100 px-3">
+                        <label for="name" class="form-group__label form-label">First name</label>
+                        <input required type="name" id="name" class="form-group__input form-control"
+                            placeholder="Enter first name">
+                    </div>
+                    <div class="form-group__card w-100 px-3">
+                        <label for="last-name" class="form-group__label form-label">Last name</label>
+                        <input required type="name" id="last-name" class="form-group__input form-control"
+                            placeholder="Enter Last name">
+                    </div>
+                </div>
+                <div class="form-group__item d-flex mb-2">
+                    <div class="form-group__card w-100 px-3">
+                        <label for="email" class="form-group__label form-label">Email</label>
+                        <input required type="email" id="email" class="form-group__input form-control"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group__card w-100 px-3">
+                        <label for="phone" class="form-group__label form-label">Phone number</label>
+                        <input required type="phone" id="phone" class="form-group__input form-control"
+                            placeholder="Enter phone number">
+                    </div>
+                </div>
+                <div class="form-group__item d-flex mb-2">
+                    <div class="form-group__card w-100 px-3">
+                        <label for="organization-text" class="form-group__label form-label">Organization name</label>
+                        <input required type="text" id="organization-name" class="form-group__input form-control"
+                            placeholder="Enter organization name">
+                    </div>
+                    <div class="form-group__card w-100 px-3">
+                        <label for="address" class="form-group__label form-label">Address</label>
+                        <input required type="text" id="address" class="form-group__input form-control"
+                            placeholder="Enter address">
+                    </div>
+                </div>
+                <div class="form-group__item d-flex mb-2">
+                    <div class="form-group__card w-100 px-3">
+                        <label for="job" class="form-group__label form-label">Job type</label>
+                        <select class="form-group__select form-select" id="job" aria-label="Default select example">
+                            <option selected>Select job type</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group__card w-100 px-3">
+                        <label for="workers" class="form-group__label form-label">Number of workers</label>
+                        <select class="form-group__select form-select" id="workers" aria-label="Default select example">
+                            <option selected>Select number of staff</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group__item d-flex mb-2">
+                    <div class="form-group__card w-100 px-3">
+                        <label for="message" class="form-group__label form-label">Message</label>
+                        <textarea required rows="5" id="message" class="form-group__textarea form-control"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+                <button class="form-group__button" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#modalSucces">Send my request</button>
+            </form>
+            <p class="signup__description ">By clicking this button you agree to Rosterd’s <a class="signup__link"
+                    href="terms.html">Privacy Policy</a>
+                and <a class="signup__link" href="terms.html">Terms of use</a></p>
+        </div>
+    </div>
+
+
+
+    <!-- Footer, scripts and modals -->
+    <include src="src/templates/modals.html"></include>
+    <include src="src/templates/footer.html"></include>
+</body>
+
+</html>

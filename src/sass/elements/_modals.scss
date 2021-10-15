@@ -1,0 +1,146 @@
+// === MODAL-NAV ===
+.modal {
+    top: 25%;
+    left: -5%;
+    &__btn-close {
+        opacity: 0.75;
+        position: relative;
+        z-index: 5;
+        margin-top: 0.4em !important;
+        margin-right: 0.4em !important;
+        &:focus {
+            outline: 0;
+        }
+        &:hover {
+            border: 1px solid #000 !important;
+            opacity: 1;
+            transition: ease-in 0.2s;
+        }
+    }
+    &__bg-light {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 0.8em;
+        margin-right: 1.2em;
+    }
+    &__title {
+        font-size: 1.75em;
+        font-weight: 700;
+        color: #25282b;
+    }
+    .modal-content {
+        width: 620px;
+        height: 487px;
+        border-radius: 8px;
+    }
+    .modal-body {
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    .modal-card {
+        padding: 2em 1em;
+        border-radius: 17px;
+        border: 1px solid #e8e8e8;
+        box-shadow: 0px 4px 5px 0px rgba(221, 227, 252, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__icon {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 1em;
+            background-color: #e8effd !important;
+            border-radius: 100%;
+        }
+        &__title {
+            font-size: 1em;
+            font-weight: 400;
+            margin-bottom: 1em;
+        }
+        &__button {
+            margin-bottom: 0.5em;
+            border: none;
+            height: 44px;
+            width: 149px;
+            border-radius: 8px;
+            padding: 0.5em 1em 0.5em 1em;
+            font-size: 1em;
+            font-weight: 500;
+            &:hover {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0d2273;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .organization-icon {
+        background: url(/img/sign-up__popup-icon-organisation.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .staff-icon {
+        background: url(/img/sign-up__popup-icon-staff.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+// === / MODAL-NAV ===
+
+// === MODAL-SUCCESS ===
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        height: 417px !important;
+        width: 400px !important;
+        border-radius: 16px;
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 2rem 1rem!important;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        background: url(/img/modal-succes__icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 1em;
+    }
+    &__title {
+        font-family: Roboto;
+        font-size: 1.25em;
+        font-weight: 500;
+        color: #25282B;
+        margin-bottom: 0.5em;
+    }
+    &__text {
+        padding: 0 2em;
+        margin-bottom: 2em;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        color: #25282B;
+    }
+    &__button {
+        color: $primary;
+        font-weight: 600;
+        padding: 0.5em 4em;
+        background-color: $white;
+        border: 1.2px solid #0D2273;
+        border-radius: 8px;
+        transition: 0.2s linear;
+        &:hover {
+            box-shadow: 0 0 0 3px $primary inset;
+        }
+    }
+}
+// === / MODAL-SUCCESS ===

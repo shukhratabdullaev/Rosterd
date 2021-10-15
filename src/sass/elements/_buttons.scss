@@ -6,9 +6,9 @@
         transition: 0.2s linear;
     }
     &__business-login {
-        background-color: $white;
-        border: 1px solid $primary;
-        color: $primary;
+        background-color: #fff;
+        border: 1px solid #0d2273;
+        color: #0d2273;
         font-weight: 600;
         &:hover {
             box-shadow: 0 0 0 3px $primary inset;
@@ -26,7 +26,7 @@
 }
 
 .modal-card {
-     &__button {
+    &__button {
         padding: 0.5em 1em;
         font-size: 1em;
         color: #fff;

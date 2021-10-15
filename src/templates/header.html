@@ -1,10 +1,9 @@
 <!-- header-nav -->
 <header class="header position-fixed w-100">
-
   <nav class="navbar navbar-expand-lg bg-white py-3">
     <div class="container">
       <a class="logo navbar-brand d-flex" href="index.html">
-        <img class="logo__img" src="../img/logo.svg" alt="Logotype">
+        <img class="logo__img" src="img/logo.svg" alt="Logotype">
         <p class="logo__text m-0">rosterd</p>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -31,10 +30,9 @@
         </ul>
         <div class="d-flex button-group">
           <button class="button-group__business-login button-group__button" type="submit">Business Login</button>
-          <button class="button-group__sign-up button-group__button" data-bs-toggle="modal"
+          <button class="button-group__sign-up button-group__button" type="submit" data-bs-toggle="modal"
             data-bs-target="#exampleModal">Sign Up</button>
         </div>
-
       </div>
     </div>
   </nav>
@@ -42,42 +40,4 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <div class="bg-light modal__bg-light"></div>
-        <button type="button" class="btn-close modal__btn-close border" data-bs-dismiss="modal"
-          aria-label="Close"></button>
-      </div>
-      <h5 class="modal-title modal__title text-center" id="exampleModalLabel">I want to sign up as</h5>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="modal-card">
-                <div class="modal-card__icon organization-icon"></div>
-                <h5 class="modal-card__title">I am looking for staff</h5>
-                <button class="modal-card__button" type="button">Organization</button>
-
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="modal-card">
-                <div class="modal-card__icon staff-icon"></div>
-                <h5 class="modal-card__title">I am looking for shifts</h5>
-                <button class="modal-card__button" type="button">Staff member</button>
-
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // Modal -->
+<include src="src\templates\modals.html"></include>

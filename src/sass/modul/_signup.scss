@@ -1,0 +1,72 @@
+.signup {
+    margin: 8em auto 5em auto;
+    &__title {
+        font-size: 1.5em;
+        font-weight: 600;
+        text-align: center;
+        color: #25282B;
+        margin-bottom: 2.5em;
+    }
+
+    .form-group {
+        &__item {
+        }
+        &__card {
+        }
+
+        &__title {
+            margin-bottom: 1em;
+        }
+        &__label {
+            font-size: 1em;
+            font-weight: 600;
+            color: #272727;
+        }
+        &__input,
+        &__select,
+        &__textarea {
+            background-color: #f3f7fe;
+            padding: 1em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+            &::placeholder {
+                font-size: 1em;
+                font-weight: 400;
+                color: #7E7E7E;
+            }
+            &:focus {
+                background-color: #fff;
+            }
+        }
+
+        &__select {
+            background-color: #fff;
+        }
+        &__textarea {
+            margin-bottom: 2.5em;
+        }
+        &__button {
+            display: block;
+            margin: 0 auto 2em auto;
+            color: #ffffff;
+            align-self: flex-start;
+            background-color: #0d2273;
+            padding: 0.5em 1.5em;
+            border-radius: 8px;
+            transition: 0.2s linear;
+            &:hover {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0d2273;
+            }
+        }
+    }
+    &__description {
+        font-size: 1em;
+        font-weight: 400;
+        color: #7E7E7E;
+        text-align: center;
+    }
+    &__link {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
