@@ -1,6 +1,94 @@
 .faq {
-    margin: 12em auto;
+    margin: 12em 0 10em 0;
     .faq-body {
-        &__title {}
+        &__title {
+            font-size: 2.5em;
+            font-weight: 700;
+            text-align: center;
+            color: #25282B;
+            margin-bottom: 1.5em;
+        }
+    }
+    .faq-tab {
+        justify-content: center;
+        margin-bottom: 4em;
+        border: none;
+        &__item {
+        }
+        .active {
+            border: none;
+            font-size: 1.25em;
+            font-weight: 700;
+            color: #0D2273;
+            border-bottom: 2px solid #2EDBAD;
+        }
+        &__link {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #25282B;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            &:focus {
+                outline: 0;
+                border: none;
+                border-bottom: 2px solid #2EDBAD;
+            }
+            &:hover {
+                outline: 0;
+                border: none;
+                border-bottom: 2px solid #2EDBAD;
+            }
+        }
+        &__content {
+            padding: 0 15em;
+        }
+        &__pane {
+        }
+    }
+    .faq-accordion {
+        &__item {
+            border: 0;
+            border-top: 1px solid #BDBDBD;
+            border-bottom: 1px solid #BDBDBD;
+        }
+        &__header {
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #fff;
+            border: none;
+            color: #0D2273;
+            font-weight: 700;
+            box-shadow: none;
+            &::after {
+                background: url(/img/accordion-minus.svg);
+                background-size: 1.25rem;
+                height: 2px;
+            }
+        }
+        &__button {
+            font-size: 20px;
+            font-weight: 400;
+            color: #25282B;
+            padding: 1.5em 0;
+            transition: .1s ease;
+            &::after {
+                background: url(/img/accordion-plus.svg);
+                background-size: 1.25rem;
+                background-repeat: no-repeat;
+                margin-right: 1em;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        &__collapse {
+        }
+        &__body {
+            padding: 0;
+            padding-bottom: 1.5em;
+        }
+        &__text {
+            padding-right: 4em;
+        }
     }
 }
