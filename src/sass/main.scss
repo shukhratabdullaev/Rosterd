@@ -7,19 +7,8 @@
 @import 'core/app';                    // Default styles of app
 
 // Elements
-@import 'elements/preloader';          // Preloader
 @import 'elements/buttons';            // Buttons
-@import 'elements/forms';              // Forms
-@import 'elements/images';             // Images
-@import 'elements/cards';              // Cards
-@import 'elements/various';            // Dropdowns & Collapses & Tabs & Paginations & Breadcrumbs ...
-@import 'elements/sections';           // Sections of app
-@import 'elements/navbar';             // Navbar of app
-@import 'elements/hamburger';          // Hamburger
-@import 'elements/slider';             // Sliders
-@import 'elements/vendor';             // Vendor code + my
 @import 'elements/modals';             // Modals
-@import 'elements/animation';          // Animations
 
 // Modules
 @import 'modul/header-nav';            // Header & Navbar
@@ -28,3 +17,5 @@
 @import 'modul/footer';                // Footer
 @import 'modul/about-us';              // About-us page
 @import 'modul/signup';                // Sign-up page
+@import 'modul/terms';                 // Terms and Policy page
+@import 'modul/faq';                 // Terms and Policy page

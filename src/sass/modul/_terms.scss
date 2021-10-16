@@ -1,0 +1,37 @@
+// === TERMS AND POLICY ===
+.terms {
+    margin: 12em 0 5em 0;
+    color: #25282B;
+    .list {
+        &__item {
+            padding: 0.5em;
+        }
+        &__link {
+            &:active {
+                color: #2EDBAD;
+            }
+        }
+    }
+    .terms-body {
+        padding-right: 10em;
+        &__title {
+            font-size: 1.75em;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        &__subtitle {
+            font-size: 1em;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 2em;
+        }
+    }
+    .content {
+        margin-bottom: 3em;
+        &__title {
+            font-weight: 700;
+        }
+    }
+}
+// === / TERMS AND POLICY ===
