@@ -3,7 +3,10 @@
     color: #ffffff;
     background-color: #0d2273;
     &__wrapper {
-        border-bottom: .5px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        @include mq("tablet", max) {
+            display: none;
+        }
     }
     .nav-list {
         &__title {
@@ -17,11 +20,60 @@
                 margin-bottom: 2em;
             }
         }
-        &__link {
+    }
+    .download {
+        @include mq("tablet-wide", max) {
+            margin-bottom: 2em;
+        }
+        &__img {
+            @include mq("tablet", max) {
+                width: 170px;
+                height: 50px;
+                margin-right: 1em;
+            }
+            @include mq("phone", max) {
+                width: 130px;
+                height: 40px;
+            }
         }
     }
-&__copyright {
-    padding-top: 1.5em;
-    padding-bottom: 6em;
-}
+    &__copyright {
+        padding-top: 1.5em;
+        padding-bottom: 6em;
+        @include mq("tablet", max) {
+            margin-top: 3em;
+            text-align: center;
+        }
+    }
+
+    .footer-accordion {
+        &__item {
+            border: none;
+        }
+        &__button {
+            background-color: #0d2273;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+            }
+            &::after {
+                background-image: url(/img/footer-collapse__carretDown.svg);
+            }
+        }
+        &__collapse {
+            background-color: #0d2273;
+            padding-left: 1em;
+        }
+    }
+    .mobile-footer {
+        display: none;
+        @include mq("tablet", max) {
+            display: block;
+        }
+    }
 }

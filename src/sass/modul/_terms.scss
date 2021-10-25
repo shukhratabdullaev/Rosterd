@@ -1,14 +1,24 @@
 // === TERMS AND POLICY ===
 .terms {
     margin: 12em 0 5em 0;
-    color: #25282B;
+    color: #25282b;
+    .terms-nav {
+        display: block;
+    }
     .list {
+        display: block;
         &__item {
             padding: 0.5em;
         }
+
         &__link {
-            &:active {
-                color: #2EDBAD;
+            font-size: 1em;
+            font-weight: 400;
+            color: #000;
+
+            &:active,
+            &.active {
+                color: #2edbad;
             }
         }
     }
@@ -25,6 +35,11 @@
             font-weight: 400;
             font-style: italic;
             margin-bottom: 2em;
+        }
+    }
+    .terms-nav {
+        @include mq("desktop-wide", max) {
+            display: none;
         }
     }
     .content {

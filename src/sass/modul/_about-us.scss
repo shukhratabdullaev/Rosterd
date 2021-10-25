@@ -1,24 +1,44 @@
 .page-about-us {
     margin: 10em 0 7em 0;
+    @include mq('desktop-wide', max) {
+            margin: 8em 0 5em 0;
+    }
     img {
         width: 100%;
     }
     &__wrapper {
         width: 74%;
         margin: 0 auto;
+        @include mq('desktop-wide', max) {
+            width: 100%;
+        }
     }
     .about {
         margin-bottom: 6em;
+        @include mq('desktop-wide', max) {
+            margin-bottom: 4em;
+        }
         &__title {
             margin-bottom: 1.5em;
+            @include mq('desktop-wide', max) {
+                text-align: center;
+                margin-bottom: 1em;
+            }
         }
         &__text {
             margin-bottom: 3em;
+            color: #25282B;
+            @include mq('desktop-wide', max) {
+                margin-bottom: 2em;
+            }
         }
     }
     .gallery {
         &__title {
-            margin-bottom: 3em;
+            margin-bottom: 2em;
+            @include mq('desktop-wide', max) {
+                margin-bottom: 1.5em;
+            }
         }
         .employee {
             margin-bottom: 2.5em;

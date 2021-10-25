@@ -27,7 +27,8 @@
             font-size: 1em;
             color: #000000;
 
-            &:active {
+            &:active,
+            &.active {
                 font-weight: 700;
                 color: #0d2273;
             }
@@ -36,9 +37,9 @@
                 background-color: #e8effd;
                 border-radius: 8px;
             }
-        }
-        .active {
-            color: #0d2273;
+            &.home {
+                color: #0d2273;
+            }
         }
     }
 }

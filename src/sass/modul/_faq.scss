@@ -5,58 +5,73 @@
             font-size: 2.5em;
             font-weight: 700;
             text-align: center;
-            color: #25282B;
+            color: #25282b;
             margin-bottom: 1.5em;
+            @include mq("tablet", max) {
+                font-size: 1.5em;
+            }
         }
     }
     .faq-tab {
         justify-content: center;
         margin-bottom: 4em;
         border: none;
-        &__item {
-        }
-        .active {
-            border: none;
-            font-size: 1.25em;
-            font-weight: 700;
-            color: #0D2273;
-            border-bottom: 2px solid #2EDBAD;
-        }
         &__link {
             font-size: 1.25em;
             font-weight: 600;
-            color: #25282B;
+            color: #25282b;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            outline: 0;
+            border: none;
+            border-color: #2edbad;
+            transition: 0.3s linear;
             &:focus {
-                outline: 0;
-                border: none;
-                border-bottom: 2px solid #2EDBAD;
+                border-bottom: 2px solid #2edbad;
             }
             &:hover {
-                outline: 0;
-                border: none;
-                border-bottom: 2px solid #2EDBAD;
+                border-bottom: 2px solid #2edbad;
             }
+            @include mq("tablet", max) {
+                font-size: 1em;
+            }
+            @include mq("phone-small", max) {
+                font-size: .9em;
+            }
+            &.active {
+            border: none;
+            font-size: 1.25em;
+            font-weight: 700;
+            color: #0d2273;
+            border-bottom: 2px solid #2edbad;
+            @include mq("tablet", max) {
+                font-size: 1.1em;
+            }
+            @include mq("phone-small", max) {
+                font-size: 1em;
+            }
+        }
         }
         &__content {
             padding: 0 15em;
-        }
-        &__pane {
+            @include mq("desktop-wide", max) {
+                padding: 0 4em;
+            }
+            @include mq("tablet", max) {
+                padding: 0;
+            }
         }
     }
     .faq-accordion {
         &__item {
             border: 0;
-            border-top: 1px solid #BDBDBD;
-            border-bottom: 1px solid #BDBDBD;
-        }
-        &__header {
+            border-top: 1px solid #bdbdbd;
+            border-bottom: 1px solid #bdbdbd;
         }
         .accordion-button:not(.collapsed) {
             background-color: #fff;
             border: none;
-            color: #0D2273;
+            color: #0d2273;
             font-weight: 700;
             box-shadow: none;
             &::after {
@@ -68,9 +83,12 @@
         &__button {
             font-size: 20px;
             font-weight: 400;
-            color: #25282B;
+            color: #25282b;
             padding: 1.5em 0;
-            transition: .1s ease;
+            transition: 0.1s ease;
+            @include mq('tablet', max) {
+                font-size: 16px;
+            }
             &::after {
                 background: url(/img/accordion-plus.svg);
                 background-size: 1.25rem;
@@ -81,14 +99,15 @@
                 box-shadow: none;
             }
         }
-        &__collapse {
-        }
         &__body {
             padding: 0;
             padding-bottom: 1.5em;
         }
         &__text {
             padding-right: 4em;
+            @include mq('tablet', max) {
+                padding-right: 2em;
+            }
         }
     }
 }

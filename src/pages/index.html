@@ -7,31 +7,39 @@
 	<title>Rosterd</title>
 </head>
 
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-offset="100" tabindex="0">
 	<include src="src/templates/header.html"></include>
-
 
 	<main>
 		<!-- header-section -->
-		<section class="container section-header">
+		<section class="section-header">
 			<div class="section-header__wrapper">
-				<div class="col-lg-6 section-header__info info">
-					<h1 class="info__title">The future of <span>shift work</span> is here</h1>
-					<p class="info__text">
-						Scheduling shift work on-demand hassle free. <b>Powerful AI</b> to match the right staff
-						for
-						the
-						job.
-						Cover shifts with in a
-						matter of minutes. Easy to use on any device.
-					</p>
-					<div class="info__links links">
-						<a href="#" class="links__app-store"><img src="img/app-store.svg" alt="App-store"></a>
-						<a href="#" class="links__google-play"><img src="img/google-play.svg" alt="Google-play"></a>
+				<div class="container">
+					<div class="section-header__inner">
+						<div class="row">
+							<div class="col-lg-6 section-header__info info">
+								<h1 class="info__title">The future of <span>shift work</span> is here</h1>
+								<p class="info__text">
+									Scheduling shift work on-demand hassle free. <b>Powerful AI</b> to match the right
+									staff
+									for
+									the
+									job.
+									Cover shifts with in a
+									matter of minutes. Easy to use on any device.
+								</p>
+								<div class="info__links links">
+									<a href="#" class="links__app-store"><img src="img/app-store.svg"
+											alt="App-store"></a>
+									<a href="#" class="links__google-play"><img src="img/google-play.svg"
+											alt="Google-play"></a>
+								</div>
+							</div>
+							<div class="col-lg-6 section-header__banner banner">
+								<img src="img/info-banner.png" class="banner__img" alt="info-banner">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6 section-header__banner banner">
-					<img src="img/info-banner.png" class="banner__img" alt="info-banner">
 				</div>
 			</div>
 		</section>
@@ -39,13 +47,57 @@
 
 		<!-- manage -->
 		<section class="section-manage">
-			<div class="container">
-				<h2 class="section-manage__title title">Manage all your shift in one place</h2>
+			<div class="container-lg">
 				<div class="row">
+					<h2 class="section-manage__title title">Manage all your shift in one place</h2>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="section-manage__card card">
+									<div class="card__icon"><img src="img/manage-icon__1.svg" alt=""></div>
+									<h4 class="card__subtitle subtitle">Build rosters in minutes</h4>
+									<p class="card__text text">
+										Easily create job-posting and send them directly to your staff. Post temporary
+										or
+										long-term
+										jobs
+										and fill your next
+										shift within minutes.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="section-manage__card card">
 
-					<div class="col-lg-4">
+									<div class="card__icon"><img src="img/manage-icon__2.svg"
+											alt="section-manage__icon-1">
+									</div>
+									<h4 class="card__subtitle subtitle">Roster by skillset</h4>
+									<p class="card__text text">
+										Roster employees based on their skills and qualifications. Find the right person
+										to
+										match job requirements.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="section-manage__card card">
+									<div class="card__icon"><img src="/img/manage-icon__3.svg"
+											alt="section-manage__icon-1">
+									</div>
+									<h4 class="card__subtitle subtitle">Share rosters instantly</h4>
+									<p class="card__text text">
+										Send rosters to your staff directly to their mobile app. Make sure your staff
+										recieves
+										critical updates, by posting them
+										to Rosterd app feed.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 mobile-none">
 						<div class="section-manage__card card">
-
 							<div class="card__icon"><img src="img/manage-icon__1.svg" alt=""></div>
 							<h4 class="card__subtitle subtitle">Build rosters in minutes</h4>
 							<p class="card__text text">
@@ -57,7 +109,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 mobile-none">
 						<div class="section-manage__card card">
 
 							<div class="card__icon"><img src="img/manage-icon__2.svg" alt="section-manage__icon-1">
@@ -69,7 +121,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 mobile-none">
 						<div class="section-manage__card card">
 							<div class="card__icon"><img src="/img/manage-icon__3.svg" alt="section-manage__icon-1">
 							</div>
@@ -90,7 +142,7 @@
 		<section id="how-works" class="container section-about">
 			<h2 class="section-about__title title">How Rosterd works</h2>
 			<div class="section-about__video text-center">
-				<iframe width="920" height="567" src="https://www.youtube.com/embed/TQLy5csKoDk"
+				<iframe class="iframe" width="920" height="567" src="https://www.youtube.com/embed/TQLy5csKoDk"
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
@@ -99,65 +151,81 @@
 		<!-- / about -->
 
 		<!-- start -->
-		<section id="organizations" class="section-start">
+		<section class="section-start" id="organizations">
 			<div class="container">
 				<div class="row">
 					<p class="section-start__info-title text-center">Rosterd for organizations</p>
+					<p class="section-start__mobile-text text-center">Want to sign up?</p>
 					<h2 class="section-start__title title">Get started with 4 easy steps</h2>
-					<div class="col-lg-3 section-start__wrapper">
-						<div class="start-card">
-							<div class="start-card__icon">
-								<img class="start-card__img" src="/img/start-card__icon-1.svg" alt="section-start__img">
-							</div>
-							<h4 class="start-card__subtitle subtitle">Sign Up</h4>
-							<p class="start-card__text text">Register your organization by filling in form on our
-								website. It
-								will take just a few moments.</p>
-						</div>
-					</div>
-					<div class="col-lg-3 section-start__wrapper">
-						<div class="start-card text-center before">
-							<div class="start-card">
-								<div class="start-card__icon">
-									<img class="start-card__img" src="/img/start-card__icon-2.svg"
-										alt="section-start__img">
+					<div class="mobile-wrapper d-flex ">
+
+						<div class="d-flex mobile-inner">
+							<div class="col-lg-3 section-start__wrapper">
+								<div class="start-card">
+									<div class="start-card__icon">
+										<img class="start-card__img" src="/img/start-card__icon-1.svg"
+											alt="section-start__img">
+									</div>
+									<h4 class="start-card__subtitle subtitle">Sign Up</h4>
+									<p class="start-card__text text">Register your organization by filling in form on
+										our
+										website. It
+										will take just a few moments.</p>
 								</div>
-								<h4 class="start-card__subtitle subtitle">Recieve access</h4>
-								<p class="start-card__text text">After you have signed up, our dedicated team will help
-									setting your organization up and give access to your Rosterd
-									platform.</p>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 section-start__wrapper">
-						<div class="start-card text-center before">
-							<div class="start-card">
-								<div class="start-card__icon">
-									<img class="start-card__img" src="/img/start-card__icon-3.svg"
-										alt="section-start__img">
+
+							<div class="col-lg-3 section-start__wrapper">
+								<div class="start-card text-center before">
+									<div class="start-card">
+										<div class="start-card__icon">
+											<img class="start-card__img" src="/img/start-card__icon-2.svg"
+												alt="section-start__img">
+										</div>
+										<h4 class="start-card__subtitle subtitle">Recieve access</h4>
+										<p class="start-card__text text">After you have signed up, our dedicated team
+											will
+											help
+											setting your organization up and give access to your Rosterd
+											platform.</p>
+									</div>
 								</div>
-								<h4 class="start-card__subtitle subtitle">Send invite</h4>
-								<p class="start-card__text text">Send email invite to all your staff members to
-									download
-									Rosterd app either on iphone or android.</p>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 section-start__wrapper">
-						<div class="start-card text-center before">
-							<div class="start-card">
-								<div class="start-card__icon">
-									<img class="start-card__img" src="/img/start-card__icon-4.svg"
-										alt="section-start__img">
+
+						<div class="d-flex mobile-inner">
+
+							<div class="col-lg-3 section-start__wrapper">
+								<div class="start-card text-center before">
+									<div class="start-card">
+										<div class="start-card__icon">
+											<img class="start-card__img" src="/img/start-card__icon-3.svg"
+												alt="section-start__img">
+										</div>
+										<h4 class="start-card__subtitle subtitle">Send invite</h4>
+										<p class="start-card__text text">Send email invite to all your staff members to
+											download
+											Rosterd app either on iphone or android.</p>
+									</div>
 								</div>
-								<h4 class="start-card__subtitle subtitle">Post your job</h4>
-								<p class="start-card__text text">You are all set! Post your first job and let
-									your
-									staff
-									imediately know about it. Enjoy simplicity!</p>
+							</div>
+							<div class="col-lg-3 section-start__wrapper">
+								<div class="start-card text-center before">
+									<div class="start-card">
+										<div class="start-card__icon">
+											<img class="start-card__img" src="/img/start-card__icon-4.svg"
+												alt="section-start__img">
+										</div>
+										<h4 class="start-card__subtitle subtitle">Post your job</h4>
+										<p class="start-card__text text">You are all set! Post your first job and let
+											your
+											staff
+											imediately know about it. Enjoy simplicity!</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -167,9 +235,17 @@
 		<section class="app-works">
 			<div class="container">
 				<h2 class="app-works__title title">How Rosterd App works</h2>
-				<div class="row mb-5">
+				<div class="row mobile-wrapper position-relative flex-lg-row-reverse">
 					<div class="col-lg-6 app-works__imgage-block image-block">
-						<img class="imgage-block__img" src="../img/works__img.png" alt="How works">
+						<img class="image-block__img" src="../img/works__img.png" alt="How works">
+						<div class="image-block__img-buttons">
+							<img class="image-block__button top " src="/img/works__button1.png"
+								alt="laptop-button">
+							<img class="image-block__button center " src="/img/works__button2.png"
+								alt="laptop-button">
+							<img class="image-block__button bottom " src="/img/works__button3.png"
+								alt="laptop-button">
+						</div>
 					</div>
 					<div class="col-lg-6 d-flex justify-content-end">
 						<div class="app-works__staff staff">
@@ -186,7 +262,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row laptop-wrapper">
 					<div class="col-lg-6">
 						<div class="app-works__dashboard dashboard">
 							<p class="dashboard__title">Rosterd admin dashboard</p>
@@ -203,7 +279,15 @@
 					</div>
 					<div class="col-lg-6 app-works__pos-a">
 						<div class="app-works__dashboard-img dashboard-img">
-							<img class="dashboard-img__img" src="img/works-dashboard__img.png" alt="admin-dashboard">
+							<img class="dashboard-img__img" src="img/works__laptop.png" alt="admin-dashboard">
+							<div class="dashboard-img__img-buttons">
+								<img class="dashboard-img__img-button top " src="/img/laptop__button-top.png"
+									alt="laptop-button">
+								<img class="dashboard-img__img-button center " src="/img/laptop__button-center.png"
+									alt="laptop-button">
+								<img class="dashboard-img__img-button bottom " src="/img/laptop__button-bottom.png"
+									alt="laptop-button">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -212,11 +296,13 @@
 		<!-- / app-works -->
 
 		<!-- contact -->
-		<section id="contact" class="contact">
+		<section class="contact">
 			<div class="container">
-				<div class="row">
+				<div class="row mobile-position">
 					<div class="col-lg-6 contact__information information">
-						<h2 class="information__title">Get in Touch</h2>
+						<div class="information__title-wrapper">
+							<h2 class="information__title">Get in Touch</h2>
+						</div>
 						<div class="information__card information-card flex-column">
 							<a class="d-flex mb-5" href="tel:+6402040392445">
 								<div class="information-card__icon">
@@ -238,7 +324,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-6 contact__pos-a">
+					<div class="col-lg-6 contact__pos-a pt-5" id="contact">
 						<form class="contact__form-group form-group d-flex flex-column">
 							<h2 class="form-group__title title">Contact Us</h2>
 							<label class="form-group__label form-label" for="name">Full name</label>
