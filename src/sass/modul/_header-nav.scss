@@ -46,9 +46,11 @@
 // === / HEADER-NAV ===
 
 // === HAMBURGER ===
+
 .hamburger {
     display: none;
-    @include mq('tablet-wide', max) {
+
+    @include mq("tablet-wide", max) {
         display: block;
     }
     &__item {
@@ -70,9 +72,30 @@
     }
 }
 
-// === / HAMBURGER ===
+.shadow {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    bottom: 79px;
+    transition: all 0.5s ease;
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
 
-.nav {
+#body {
+    &.overflow-hidden {
+    overflow: hidden;
+}
+}
+
+
+.hamburgerNav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
@@ -92,11 +115,12 @@
     padding: 1em 0;
 }
 
-.nav.expanded {
+.hamburgerNav.expanded {
     left: 0;
+
 }
 
-.nav ul {
+.hamburgerNav ul {
     position: relative;
 }
 
@@ -111,7 +135,7 @@
     top: 2rem;
     z-index: 2;
     width: 30px;
-    @include mq('phone', max) {
+    @include mq("phone", max) {
         right: 1rem;
     }
 }
@@ -172,3 +196,5 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+// === / HAMBURGER ===
