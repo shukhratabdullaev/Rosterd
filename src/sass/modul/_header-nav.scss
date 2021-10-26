@@ -47,6 +47,10 @@
 
 // === HAMBURGER ===
 .hamburger {
+    display: none;
+    @include mq('tablet-wide', max) {
+        display: block;
+    }
     &__item {
         border-bottom: 1px solid #e8e8e8;
         margin: 0;
@@ -107,6 +111,9 @@
     top: 2rem;
     z-index: 2;
     width: 30px;
+    @include mq('phone', max) {
+        right: 1rem;
+    }
 }
 
 .nav-toggle:hover {
