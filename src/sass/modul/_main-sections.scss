@@ -418,7 +418,7 @@ body {
     }
     &__title {
         margin-bottom: 6rem;
-        @include mq('tablet-wide', max) {
+        @include mq("tablet-wide", max) {
             margin-bottom: 3rem;
         }
     }
@@ -431,10 +431,11 @@ body {
         .list {
             &__item {
                 position: relative;
-                margin-bottom: 2em;
+                margin-bottom: 1.5em;
                 font-size: 1em;
                 font-weight: 400;
                 padding-left: 4rem;
+                height: 40px;
                 &::before {
                     content: " ";
                     display: block;
@@ -510,7 +511,6 @@ body {
             display: block;
             position: absolute;
             bottom: 0;
-            // transform: translate(50%, 50%);
             border-radius: 100%;
             background-color: #e8effd;
             z-index: 1;
