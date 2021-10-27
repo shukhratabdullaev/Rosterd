@@ -5,7 +5,7 @@
     <include src="src/templates/head.html"></include>
 </head>
 
-<body id="body" class="position-relative">
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#terms-nav" data-bs-offset="200" tabindex="0">
     <include src="src/templates/header.html"></include>
     <div class="terms">
         <div class="container">
@@ -32,8 +32,7 @@
                 <div class="col-lg-9">
                     <h2 class="terms-body__title">Privacy Policy</h2>
                     <p class="terms-body__subtitle">Effective Date: September 13, 2021</p>
-                    <div class="terms-body position-relative" data-bs-spy="scroll" data-bs-target="#terms-nav"
-                    data-bs-offset="200" tabindex="0">
+                    <div class="terms-body position-relative" >
                         <div class="terms-content content" id="introduction">
                             <h5 class="content__title">Introduction</h5>
                             <p class="content__text">
@@ -65,7 +64,7 @@
     </div>
 
     <!-- Footer, scripts and modals -->
-    <include src="src/templates/footer-scripts.html"></include>
+    <include src="src/templates/footer.html"></include>
 
 
 </body>
