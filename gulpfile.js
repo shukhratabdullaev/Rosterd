@@ -230,7 +230,7 @@ function scssToMinProcess() {
     return gulp
       .src([src.scss + '/main.scss'])
       .pipe(sass())
-      .pipe(cleanCSS({compatibility: 'ie8'}))
+      .pipe(cleanCSS({ compatibility: 'ie8' }))
       .pipe(concat('main.min.css'))
       .pipe(postcss(plugins))
       .pipe(prettier())
@@ -240,7 +240,7 @@ function scssToMinProcess() {
       .src([src.scss + '/main.scss'])
       .pipe(sourcemaps.init())
       .pipe(sass())
-      .pipe(cleanCSS({compatibility: 'ie8'}))
+      .pipe(cleanCSS({ compatibility: 'ie8' }))
       .pipe(concat('main.min.css'))
       .pipe(postcss(plugins))
       .pipe(sourcemaps.write(paths.maps))
@@ -274,9 +274,8 @@ function jsProcess() {
   } else {
     return gulp
       .src([src.js + '/app.js'])
-      .pipe(concat('main.js'))
       .pipe(gulp.dest(dist.js));
-    }
+  }
 }
 
 /**
@@ -296,7 +295,7 @@ function jsToMinProcess() {
       .pipe(concat('main.min.js'))
       .pipe(uglify({ output: { quote_keys: true, ascii_only: true } }))
       .pipe(gulp.dest(dist.js));
-    }
+  }
 }
 
 /**
