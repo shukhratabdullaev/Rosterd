@@ -18,17 +18,25 @@
 
         let hamburger = {
             navToggle: document.querySelector('.nav-toggle'),
-            nav: document.querySelector('nav'),
+            hamburgerNav: document.getElementById('hamburgerNav'),
+            outer: document.getElementById('outer'),
+            body: document.getElementById('body'),
+            link: document.getElementById('mobile-nav'),
 
-            doToggle: function (e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
+
+            doToggle: function (e, isOpen) {
+                
+                
+                this.navToggle.classList.toggle('expanded', isOpen);
+                this.hamburgerNav.classList.toggle('expanded', isOpen);
+                this.outer.classList.toggle('shadow', isOpen);
+                this.body.classList.toggle('overflow-hidden', isOpen);
             }
         };
 
-        hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e); });
-        // hamburger.nav.addEventListener('click', function (e) { hamburger.doToggle(e); });
-
+        hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e); e.stopPropagation()});
+        hamburger.outer.addEventListener('click', function (e) { hamburger.doToggle(e, false); });
+        hamburger.hamburgerNav.addEventListener('click', function (e) { e.stopPropagation(); console.log('123');});
+        hamburger.link.addEventListener('click', function (e) { hamburger.doToggle(e, false); console.log('click link');});
     }());
 </script>

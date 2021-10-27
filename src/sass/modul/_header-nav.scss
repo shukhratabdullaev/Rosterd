@@ -115,9 +115,9 @@
     padding: 1em 0;
 }
 
+
 .hamburgerNav.expanded {
     left: 0;
-
 }
 
 .hamburgerNav ul {
@@ -138,6 +138,7 @@
     @include mq("phone", max) {
         right: 1rem;
     }
+    
 }
 
 .nav-toggle:hover {
