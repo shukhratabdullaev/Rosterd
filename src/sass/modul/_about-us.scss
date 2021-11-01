@@ -1,58 +1,64 @@
 .page-about-us {
-    margin: 10em 0 7em 0;
-    @include mq('desktop-wide', max) {
-            margin: 8em 0 5em 0;
+  margin: 10em 0 7em 0;
+  @include mq("desktop-wide", max) {
+    margin: 8em 0 5em 0;
+  }
+  img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  &__wrapper {
+    width: 74%;
+    margin: 0 auto;
+    @include mq("desktop-wide", max) {
+      width: 100%;
     }
-    img {
-        width: 100%;
+  }
+  .about {
+    margin-bottom: 6em;
+    @include mq("desktop-wide", max) {
+      margin-bottom: 4em;
     }
-    &__wrapper {
-        width: 74%;
-        margin: 0 auto;
-        @include mq('desktop-wide', max) {
-            width: 100%;
-        }
+    &__title {
+      margin-bottom: 1.5em;
+      @include mq("desktop-wide", max) {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      &-left {
+        text-align: left;
+      }
     }
-    .about {
-        margin-bottom: 6em;
-        @include mq('desktop-wide', max) {
-            margin-bottom: 4em;
-        }
-        &__title {
-            margin-bottom: 1.5em;
-            @include mq('desktop-wide', max) {
-                text-align: center;
-                margin-bottom: 1em;
-            }
-        }
-        &__text {
-            margin-bottom: 3em;
-            color: #25282B;
-            @include mq('desktop-wide', max) {
-                margin-bottom: 2em;
-            }
-        }
+
+    &__text {
+      margin-bottom: 3em;
+      color: #25282b;
+      @include mq("desktop-wide", max) {
+        margin-bottom: 2em;
+      }
     }
-    .gallery {
-        &__title {
-            margin-bottom: 2em;
-            @include mq('desktop-wide', max) {
-                margin-bottom: 1.5em;
-            }
-        }
-        .employee {
-            margin-bottom: 2.5em;
-            font-size: 1em;
-            &__img {
-                margin-bottom: 1em;
-            }
-            &__name {
-                font-weight: 600;
-                margin-bottom: .5em;
-            }
-            &__position {
-                font-weight: 400;
-            }
-        }
+  }
+  .gallery {
+    text-align: center;
+    &__title {
+      margin-bottom: 2em;
+      @include mq("desktop-wide", max) {
+        margin-bottom: 1.5em;
+      }
     }
+    .employee {
+      margin-bottom: 2.5em;
+      font-size: 1em;
+      &__img {
+        margin-bottom: 1em;
+      }
+      &__name {
+        font-weight: 600;
+        margin-bottom: 0.5em;
+      }
+      &__position {
+        font-weight: 400;
+      }
+    }
+  }
 }
