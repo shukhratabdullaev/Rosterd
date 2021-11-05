@@ -24,13 +24,10 @@ h4 {
     font-weight: 400;
 }
 
+$sectionsPadding: 4em 0 6em 0;
+
+
 body {
-    @include mq("desktop-wide", max) {
-        font-size: 0.9rem;
-    }
-    @include mq("desktop", max) {
-        font-size: 1rem;
-    }
 
     @include mq("phone", max) {
         font-size: 0.9rem;
@@ -43,6 +40,9 @@ body {
 .section-header {
     margin-top: 12em;
     padding-bottom: 6em;
+    @include mq('desktop', max) {
+        margin-top: 10em;
+    }
     @include mq("tablet-wide", max) {
         margin-top: 10em;
     }
@@ -164,7 +164,7 @@ body {
 // === MANAGE ===
 .section-manage {
     background-color: #f8f8f8;
-    padding: 4em 0 6em 0;
+    padding: $sectionsPadding;
     @include mq("tablet-wide", max) {
         padding: 3em 0 3em 0;
     }
@@ -280,7 +280,7 @@ body {
 
 // === ABOUT ===
 .section-about {
-    padding: 6em 0 7em 0;
+    padding: $sectionsPadding;
     &__title {
         margin-bottom: 2em;
     }
@@ -375,6 +375,11 @@ body {
                 margin-bottom: 1em;
             }
             &__text {
+
+                @include mq("desktop", min) {
+                    padding: 0 1rem;
+                }
+
                 @include mq("desktop", max) {
                     padding: 0 4em 2em 4em;
                 }
@@ -407,9 +412,9 @@ body {
 // === APP-WORKS ===
 .app-works {
     position: relative;
-    padding: 6rem 0 30rem 0;
+    padding: 4rem 0 30rem 0;
     overflow: hidden;
-    @include mq("desktop-wide", max) {
+    @include mq("tablet-wide", max) {
         padding-bottom: 10em;
     }
     @include mq("tablet-wide", max) {
@@ -673,7 +678,7 @@ body {
         position: absolute;
         right: 0;
         bottom: 0;
-        @include mq("desktop-wide", max) {
+        @include mq("tablet-wide", max) {
             position: relative;
         }
         @include mq("tablet-wide", max) {
@@ -691,7 +696,8 @@ body {
         border-radius: 16px;
         background-color: #ffffff;
         align-items: flex-start;
-        @include mq("tablet", max) {
+        
+        @include mq("desktop", max) {
             width: 100%;
         }
         &__title {
@@ -727,7 +733,7 @@ body {
         }
     }
     .mobile-position {
-        @include mq("desktop-wide", max) {
+        @include mq("tablet-wide", max) {
             flex-direction: column-reverse;
             align-items: center;
         }

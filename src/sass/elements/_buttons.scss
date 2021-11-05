@@ -5,15 +5,15 @@
         border-radius: 8px;
         transition: 0.2s linear;
     }
-    &__business-login {
-        background-color: #fff;
-        border: 1px solid #0d2273;
-        color: #0d2273;
-        font-weight: 600;
-        &:hover {
-            box-shadow: 0 0 0 3px $primary inset;
-        }
-    }
+    // &__business-login {
+    //     background-color: #fff;
+    //     border: 1px solid #0d2273;
+    //     color: #0d2273;
+    //     font-weight: 600;
+    //     &:hover {
+    //         box-shadow: 0 0 0 3px $primary inset;
+    //     }
+    // }
     &__sign-up {
         margin-left: 1em;
         background-color: $primary;
@@ -21,6 +21,7 @@
         border: 1px solid $primary;
         &:hover {
             box-shadow: 0 0 0 2px white, 0 0 0 4px $primary;
+            color: #fff;
         }
     }
 }

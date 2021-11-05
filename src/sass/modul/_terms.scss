@@ -1,24 +1,28 @@
 // === TERMS AND POLICY ===
 .terms {
-    margin: 12em 0 5em 0;
+    margin: 10em 0 5em 0;
     color: #25282b;
     .terms-nav {
         display: block;
     }
-    .list {
-        display: block;
-        &__item {
-            padding: 0.5em;
-        }
+    .terms-aside {
+        width: 25%;
+        padding-right: 3em;
+        .list {
+            display: block;
+            &__item {
+                padding: 0.5em;
+            }
 
-        &__link {
-            font-size: 1em;
-            font-weight: 400;
-            color: #000;
+            &__link {
+                font-size: 1em;
+                font-weight: 400;
+                color: #000;
 
-            &:active,
-            &.active {
-                color: #2edbad;
+                &:active,
+                &.active {
+                    color: #2edbad;
+                }
             }
         }
     }
@@ -32,8 +36,14 @@
         &__subtitle {
             font-size: 1em;
             font-weight: 400;
-            font-style: italic;
             margin-bottom: 2em;
+        }
+        &__link {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+        &__text {
+            margin-bottom: 1em;
         }
     }
     .terms-nav {
@@ -42,9 +52,20 @@
         }
     }
     .content {
-        margin-bottom: 3em;
+        margin-bottom: 2em;
         &__title {
             font-weight: 700;
+        }
+        &__title-head {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+        &__text {
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: .3em;
         }
     }
 }
